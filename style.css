@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rampart+One&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav_hover{
+    @apply hover:text-blue-600 transition ease-in-out duration-700 transform hover:scale-150 border-blue-600;
+}
+
+
+.log_btn{
+    @apply text-white bg-blue-600 rounded-3xl p-2 transition ease-in-out duration-500 transform hover:scale-110 hover:bg-white hover:text-black;
+}
+
+.bg-image{
+
+    background-image:url("../includes/bg.jpg");
+    min-height:90vh;
+    
+
+}
+
+.form_control{
+    @apply outline-none border-2 p-2 border-gray-300 w-full rounded-lg focus:border-indigo-500 focus:ring-indigo-500;
+}
+
+.form_lable{
+
+    @apply block text-sm font-medium text-gray-700 my-2;
+}
+
+
+.model-body{
+    @apply bg-white p-3 rounded-lg flex flex-col lg:w-2/5 w-11/12 sm:w-4/6;
+}
