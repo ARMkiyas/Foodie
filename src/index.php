@@ -23,13 +23,16 @@ require_once('components/nav_bar.php');
   </title>
 </head>
 
-<body>
+<body class=" ">
 
   <section class="bg-image bg-cover w-screen">
 
 
     <?php
-    nav("index.php", "pages/foods.php", "pages/join_partner.php", "pages/about_us.php", "pages/contact_us.php");
+    nav("index.php", "pages/foods.php", "pages/join_partner.php", "pages/about_us.php", "pages/contact_us.php",1);
+
+    login_design();
+    reg_form();
     ?>
 
 
@@ -87,55 +90,11 @@ require_once('components/nav_bar.php');
 
   </section>
 
-  <div class="model fixed z-10 inset-0 hidden justify-center  items-center overflow-y-auto bg-black  bg-opacity-75 opacity-0 transition ease-in-out duration-1000 "  role="dialog" >
-    <div class="model-body transform scale-0 opacity-0 transition ease-in-out duration-500 ">
-      <button class="self-end " id="model_btn">
-        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-      <div class="font-logo font-semibold text-3xl self-center text-pink-500">
-        Foodie
-      </div>
-      <div class=" font-bold text-xl self-center">
-        Sign in to your account
-      </div>
-      <form action="#" class="">
-
-        <div class="p-2">
-          <label for="name" class="form_lable">Email Address</label>
-          <input type="text" class=" form_control" id="name" placeholder="abc@example.com">
-          <div class="text-xs text-red-600 px-1 hidden">Invalid email</div>
-        </div>
-
-        <div class="p-2">
-          <label for="name" class="form_lable">Password</label>
-          <input type="password" class=" form_control " id="password" placeholder="************">
-          <div class="text-xs text-red-600 px-1 hidden">Invalid email</div>
-        </div>
-
-        <div class="p-2 flex justify-between">
-          <div class=" font-medium text-gray-700 "><input type="checkbox" name="remember" id="" class="mr-1">Remember me</input></div>
-          <a href="#" class=" text-indigo-500 hover:text-indigo-600 font-bold"> Forgot your password?</a>
-        </div>
-
-        <div class="p-2 py-5">
-          <button class="bg-indigo-600 form_control text-white font-semibold hover:bg-indigo-700">
-            Login
-          </button>
-        </div>
-
-      </form>
-      <hr>
-      <div class="p-2 text-center font-semibold text-gray-600 hover:text-gray-800 text-md">
-        <a href="#">Don't have a Account</a>
-      </div>
-    </div>
-  </div>
+ 
 
 
-
-
+   <!-------------------------------- scripts --------------------------------------->
+  <script type="text/javascript" src="./assets/js/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/index.js"></script>
 
 

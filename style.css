@@ -7,6 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.logo{
+    @apply font-logo font-semibold text-3xl text-pink-500;
+}
+
 .nav_hover{
     @apply hover:text-blue-600 transition ease-in-out duration-700 transform hover:scale-150 border-blue-600;
 }
@@ -33,7 +37,36 @@
     @apply block text-sm font-medium text-gray-700 my-2;
 }
 
+.model{
 
+    @apply fixed z-10 inset-0 sm:overflow-y-auto bg-black  bg-opacity-75 justify-center items-center;
+}
 .model-body{
     @apply bg-white p-3 rounded-lg flex flex-col lg:w-2/5 w-11/12 sm:w-4/6;
+}
+
+sup{
+    @apply text-red-600;
+}
+
+input:checked+label{
+    @apply bg-green-400 text-white;
+}
+
+.model-body-reg{
+
+    @apply bg-white p-3 rounded-lg flex flex-col w-screen h-full md:w-4/6   overflow-y-auto;
+}
+
+.gender_radio{
+    @apply flex flex-col border-2 rounded-full border-green-300 hover:bg-green-400  hover:text-white font-medium font-sans text-center cursor-pointer p-2 relative;
+}
+
+.submit_btn{
+    @apply bg-indigo-600 form_control text-white font-semibold hover:bg-indigo-700;
+}
+
+.contact_bg{
+
+    background:url('https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=1280')
 }

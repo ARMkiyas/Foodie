@@ -23,14 +23,17 @@ require_once SITE_ROOT."/components/nav_bar.php";
 
             <?php
             
-             nav("../index.php","foods.php","join_partner.php","about_us.php","contact_us.php");
+             nav("../index.php","foods.php","join_partner.php","about_us.php","contact_us.php",4);
+             login_design();
+             reg_form();
             ?>
     </section>
 
 
 
 
-
+    <!-------------------------------- scripts --------------------------------------->
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
     <script type="text/javascript" src="../assets/js/index.js"></script>
 </body>
 

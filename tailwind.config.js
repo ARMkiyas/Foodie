@@ -4,7 +4,11 @@ module.exports = {
   theme: {
       fontFamily:{
 
-        'logo':['Lobster', 'cursive']
+        'logo':['Lobster', 'cursive'],
+        'sans': ['ui-sans-serif', 'system-ui'],
+       'serif': ['ui-serif', 'Georgia'],
+       'mono': ['ui-monospace', 'SFMono-Regular'],
+
       },
     extend: {
 
