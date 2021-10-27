@@ -4,6 +4,7 @@ require_once __DIR__ . "/../config.php";
 
 
 require_once SITE_ROOT . "/components/nav_bar.php";
+require_once SITE_ROOT."/components/footer.php"
 ?>
 
 <!DOCTYPE html>
@@ -18,10 +19,10 @@ require_once SITE_ROOT . "/components/nav_bar.php";
     <link rel="stylesheet" href="../assets/css/sec_style.css" />
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
 
-    <section class="w-full contact_bg bg-center bg-cover bg-no-repeat text-white" style="">
+    <section class="w-full contact_bg bg-center bg-cover bg-no-repeat text-white" >
         <?php
 
         nav("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php", 5);
@@ -102,6 +103,10 @@ require_once SITE_ROOT . "/components/nav_bar.php";
         </div>
 
     </section>
+
+    <footer>
+
+    </footer>
    
 
 

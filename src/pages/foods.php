@@ -2,7 +2,9 @@
 require_once __DIR__ . "/../config.php";
 
 
+
 require_once SITE_ROOT . "/components/nav_bar.php";
+require_once SITE_ROOT . "/components/footer.php";
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +30,7 @@ require_once SITE_ROOT . "/components/nav_bar.php";
         ?>
     </section>
 
-    <!-- search button -->
+
     <div>
         <div class="flex flex-col sm:flex-row sm:h-20 px-6 border-b border-gray-300 bg-white relative ">
 
@@ -51,7 +53,7 @@ require_once SITE_ROOT . "/components/nav_bar.php";
                 </div>
                 <div class="mt-12">
 
-                 <!-- food list grid -->
+                    <!-- food list grid -->
                     <div class="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
 
                         <!-- food list cards -->
@@ -235,14 +237,19 @@ require_once SITE_ROOT . "/components/nav_bar.php";
                                 </div>
                             </div>
                         </a>
-                        
-                        
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <footer >
+        <?php
+        footer("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php");
+        ?>
+    </footer>
 
     <!-------------------------------- scripts --------------------------------------->
     <script type="text/javascript" src="../assets/js/jquery.js"></script>

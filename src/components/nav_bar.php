@@ -7,7 +7,7 @@ function nav($home_link, $food_link, $become_parner_link, $about_us_link, $conta
         <nav class=\"px-5 overflow-hidden w-screen flex lg:justify-between lg:items-center justify-between\">
     
           <div class=\" logo\">
-            Foodie
+            <a href=\"$home_link \">Foodie</a> 
           </div>
     
     

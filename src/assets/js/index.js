@@ -1,5 +1,16 @@
 
 $(document).ready(() => {
+    // starting animation
+
+    setTimeout(()=>{
+           
+    $(".start")[0].classList.remove("-translate-x-full");
+    $(".start")[0].classList.add("translate-x-0");
+    $(".start")[1].classList.remove("translate-x-full");
+    $(".start")[1].classList.add("translate-x-0");
+    },10)
+
+
 
 
     // mobile version nav buttion funtions
