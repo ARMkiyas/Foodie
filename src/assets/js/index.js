@@ -74,12 +74,27 @@ $(document).ready(() => {
     $("#reg_btn").click(()=>{
         opening_event( document.getElementsByClassName("model")[1],$(".model-body-reg")[0]);
      
-  
     });
+
+    
+    $("#reg_mobile").click(()=>{
+        opening_event( document.getElementsByClassName("model")[1],$(".model-body-reg")[0]);
+     
+    });
+
+    $("#reg_link").click(()=>{
+        opening_event( document.getElementsByClassName("model")[1],$(".model-body-reg")[0]);
+    })
+
+
+
+    
     $("#model_btn_reg").click(()=>{
 
         closing_event(  document.getElementsByClassName("model")[1],$(".model-body-reg")[0]);
     })
+
+
     
     $("#go_to_login").click(()=>{
 
@@ -105,6 +120,16 @@ $(document).ready(() => {
         }
     })
 
-    
+    $("#plus").click(()=>{
+        $("#quan")[0].textContent=parseInt($("#quan")[0].textContent)+1;
+    })
+    $("#minus").click(()=>{
+        if(parseInt($("#quan")[0].textContent)>1){
+            $("#quan")[0].textContent=parseInt($("#quan")[0].textContent)-1;
+        }
+    })
+
+
+
 
 });

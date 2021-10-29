@@ -26,8 +26,7 @@ require_once SITE_ROOT."/components/footer.php"
         <?php
 
         nav("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php", 5);
-        login_design();
-        reg_form();
+   
         ?>
 
             <!-- contact form -->
@@ -104,9 +103,19 @@ require_once SITE_ROOT."/components/footer.php"
 
     </section>
 
-    <footer>
+       <!-- login and register models -->
+  <section>
+    <?php
+        login_design();
+        reg_form();
+        ?>
+    </section>
 
-    </footer>
+    <footer class=" mt-1">
+        <?php
+            footer("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php");
+        ?>
+     </footer>
    
 
 
