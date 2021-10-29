@@ -3,7 +3,7 @@ require_once __DIR__ . "/../config.php";
 
 
 require_once SITE_ROOT . "/components/nav_bar.php";
-require_once SITE_ROOT."/components/footer.php"
+require_once SITE_ROOT . "/components/footer.php"
 
 ?>
 
@@ -26,17 +26,24 @@ require_once SITE_ROOT."/components/footer.php"
         <?php
 
         nav("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php", 4);
+
+
+        ?>
+    </section>
+    <!-- login and register models -->
+    <section>
+        <?php
         login_design();
         reg_form();
         ?>
     </section>
 
-    <section class="font-sans">
+    <section class="font-sans ">
         <div>
             <section class="bg-white mt-20">
                 <div class="max-w-2xl px-6 text-center mx-auto">
                     <h2 class="text-3xl font-semibold text-gray-800">Hi, <span class="bg-indigo-600 text-white rounded px-1">I’m Kiyas</span> . Nice to meet you.</h2>
-                    <p class="text-gray-600 mt-4">I have designed and develop this site for my university assessment and I do like to do this type of project and also, I am passionate to do like this, this site is an order and delivery management platform that instantly connects customers with storefront. Built on the power of it’s network, it’s help merchants grow sales, reach more customers, and build their online brand.</p>
+                    <p class="text-gray-600 mt-4">I have designed and developed this site for my university assessment and I do like to do this type of project and also, I am passionate to do like this, this site is an order and delivery management platform that instantly connects customers with storefront. Built on the power of it’s network, it’s help merchants grow sales, reach more customers, and build their online brand.</p>
 
                     <div class="flex items-end justify-center mt-16">
                         <svg width="189" height="188" viewBox="0 0 189 188" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,11 +97,11 @@ require_once SITE_ROOT."/components/footer.php"
 
     </section>
 
-     <footer class=" mt-1">
+    <footer class=" mt-1">
         <?php
-            footer("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php");
+        footer("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php");
         ?>
-     </footer>
+    </footer>
 
 
 

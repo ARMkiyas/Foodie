@@ -25,14 +25,13 @@ require_once('components/footer.php')
 
 <body class=" overflow-x-hidden ">
 
-  <section class="start bg-image bg-cover w-screen transform -translate-x-full  transition duration-700 ease-out transition-none transform-none">
+  <section class="start bg-image bg-cover w-screen transform -translate-x-full  transition duration-700 ease-out ">
 
 
     <?php
     nav("index.php", "pages/foods.php", "pages/join_partner.php", "pages/about_us.php", "pages/contact_us.php", 1);
 
-    login_design();
-    reg_form();
+
     ?>
 
 
@@ -60,13 +59,22 @@ require_once('components/footer.php')
 
   </section>
 
+  
+   <!-- login and register models -->
+  <section>
+    <?php
+        login_design();
+        reg_form();
+        ?>
+    </section>
 
-  <section class="start m-10 flex flex-col md:flex-row md:justify-evenly transform translate-x-full transition duration-700 ease-out transition-none transform-none">
+
+  <section class="start my-10 mx-5 flex flex-col md:flex-row md:justify-evenly transform translate-x-full transition duration-700 ease-out ">
     <div class="flex md:w-1/3 flex-col flex-wrap justify-center text-center ">
       <img class=" h-40 " src="./assets/includes/svg/food_find.svg" alt="">
       <h2 class="m-2 font-bold text-xl">Find Your Favorite Food</h2>
-      <span>Grow your business and reach new customers by partnering with us.</span>
-      <a class="m-3 text-orange font-bold" href="./pages/join_partner.php">Start Explore <svg class=" inline-flex w-4" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+      <span>What do you fancy? Browse through countless menus and reviews.</span>
+      <a class="m-3 text-orange font-bold" href="./pages/foods.php">Start Explore <svg class=" inline-flex w-4" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg>
         </svg> </a>
@@ -75,7 +83,7 @@ require_once('components/footer.php')
       <img class=" h-40" src="./assets/includes/svg/Storefront.svg" alt="">
       <h2 class="m-2 font-bold text-xl">Become a Partner</h2>
       <span>Grow your business and reach new customers by partnering with us.</span>
-      <a class="m-3 text-orange font-bold" href="/public/pages/join_partner.php">Sign up your store <svg class=" inline-flex w-4" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+      <a class="m-3 text-orange font-bold" href="./pages/join_partner.php">Sign up your store <svg class=" inline-flex w-4" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg>
         </svg> </a>
@@ -84,7 +92,7 @@ require_once('components/footer.php')
       <img class=" h-40" src="./assets/includes/svg/sign.svg" alt="">
       <h2 class="m-2 font-bold text-xl">Become a Foodie</h2>
       <span>we are welcoming you to be a one of our honoured guest(users) to get our seamless service.</span>
-      <a class="m-3 text-orange font-bold" href="./pages/join_partner.php">Register <svg class=" inline-flex w-4" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+      <a class="m-3 text-orange font-bold cursor-pointer" id="reg_link">Register <svg class=" inline-flex w-4" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg>
         </svg> </a>
@@ -101,10 +109,10 @@ require_once('components/footer.php')
         We've been serving for <span class=" inline-block text-white bg-indigo-700 transform -skew-x-12  px-4 pb-2">over 5 years.</span>
       </div>
       <div class="text-gray-500 text-md lg:text-lg">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur rem modi, facere asperiores quos, sit num
+        Discover local, on-demand delivery or Pickup from restaurants, nearby grocery and convenience stores, and more.
       </div>
       <div class="text-gray-500 text-md lg:text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad illum recusandae nesciunt ab voluptatum quaerat rem.
+      From your neighborhood sushi spot to the burger and fries you crave, choose from over 300,000 local and national favorites across the Sri lanka, U.S., Canada, Australia and more.
       </div>
 
       <div class=" bg-indigo-600 py-2 px-3 w-auto text-center hover:bg-indigo-700 text-white font-bold rounded-md ">
@@ -134,7 +142,7 @@ require_once('components/footer.php')
         Why <span class=" inline-block text-white bg-indigo-700 transform -skew-x-12  px-4 pb-2">Choose Us ?</span>
       </div>
       <div class="text-gray-500 text-md lg:text-lg">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus nesciunt soluta, fuga aut placeat eaque officia, quos doloremque eligendi asperiores velit aliquid odio exercitationem necessitatibus tempore! Facere iure saepe laboriosam ipsa iusto a minima illum.
+      Foodie is a lead­ing glob­al online food deliv­ery mar­ket­place, con­nect­ing con­sumers with over 580,000 con­nect­ed restau­rants in 25 countries.
       </div>
       <div class="text-gray-500 text-md lg:text-lg flex space-x-12">
         <div>

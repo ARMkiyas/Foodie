@@ -97,15 +97,15 @@ function nav($home_link, $food_link, $become_parner_link, $about_us_link, $conta
     
             <div class=\"my-auto mx-5 text-center\">
     
-              <div class=\"mt-4\" id=\"sign_mobile\">
-                <button class=\"p-3 bg-gray-100 min-w-full rounded-xl font-semibold hover:bg-gray-200\">
+              <div class=\"mt-4\" >
+                <button class=\"p-3 bg-gray-100 min-w-full text-black rounded-xl font-semibold hover:bg-gray-200\" id=\"sign_mobile\">
                   Sign in
                 </button>
-                <button class=\"p-3 bg-blue-500 min-w-full rounded-xl font-semibold hover:bg-blue-600 my-2 text-white\">
+                <button class=\"p-3 bg-blue-500 min-w-full rounded-xl font-semibold hover:bg-blue-600 my-2 text-white\" id=\"reg_mobile\">
                   Register
                 </button>
               </div>
-              <p class=\"my-4 text-xs text-center text-gray-400\" id=\"reg_mobile\">
+              <p class=\"my-4 text-xs text-center text-gray-400\" >
                 <span>Copyright © 2021</span>
               </p>
             </div>

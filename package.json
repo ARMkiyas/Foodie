@@ -2,7 +2,7 @@
   "name": "foodie",
   "version": "1.0.0",
   "description": "",
-  "main": "index.php",
+  "main": "./src/index.php",
   "scripts": {
     "build":"tailwindcss -i ./style.css -o ./src/assets/css/style.css",
     "run":"tailwindcss -i ./style.css -o ./src/assets/css/style.css --watch"
