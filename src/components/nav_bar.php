@@ -74,21 +74,21 @@ function nav($home_link, $food_link, $become_parner_link, $about_us_link, $conta
               </div>
             </div>
             <ul class=\"flex flex-col justify-center justify-items-stretch mx-5\">
-              <li class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
-                <a href=\"$home_link\">Home</a>
-              </li>
-              <li class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
-                <a href=\"$food_link\">Find Food</a>
-              </li>
-              <li class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
-                <a href=\"$become_parner_link\">Become a Partner</a>
-              </li>
-              <li class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
-                <a href=\"$about_us_link\">About Us</a>
-              </li>
-              <li class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
-                <a href=\"$contact_us_link\">Contact US</a>
-              </li>
+              <a href=\"$home_link\" class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
+               Home
+              </a>
+              <a href=\"$food_link\" class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
+               Find Food
+              </a>
+              <a href=\"$become_parner_link\"class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
+               Become a Partner
+              </a>
+              <a href=\"$about_us_link\" class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
+               About Us
+              </a>
+              <a href=\"$contact_us_link\" class=\"p-3 text-gray-400 hover:bg-blue-50 rounded-xl cursor-pointer mb-1 hover:text-blue-600  font-semibold text-md\">
+              Contact US  
+              </a>
     
     
     
