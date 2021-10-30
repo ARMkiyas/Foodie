@@ -4,7 +4,7 @@ require_once __DIR__ . "/../config.php";
 
 
 require_once SITE_ROOT . "/components/nav_bar.php";
-require_once SITE_ROOT."/components/footer.php"
+require_once SITE_ROOT . "/components/footer.php"
 ?>
 
 <!DOCTYPE html>
@@ -16,20 +16,19 @@ require_once SITE_ROOT."/components/footer.php"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/sec_style.css" />
+
 </head>
 
 <body class="overflow-x-hidden">
 
 
-    <section class="w-full contact_bg bg-center bg-cover bg-no-repeat text-white" >
+    <section class="w-full contact_bg bg-center bg-cover bg-no-repeat text-white">
         <?php
 
         nav("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php", 5);
-   
+
         ?>
 
-            <!-- contact form -->
         <div class="relative flex items-top justify-center min-h-screen  dark:bg-gray-900 sm:items-center sm:pt-0">
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="mt-8 overflow-hidden">
@@ -90,7 +89,7 @@ require_once SITE_ROOT."/components/footer.php"
                                 <textarea name="message" placeholder="Message*" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" id="" cols="30" rows="5"></textarea>
                             </div>
 
-                            <button type="submit" class="md:w-32  bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300 self-end">
+                            <button type="submit" class="mess md:w-32  bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300 self-end">
                                 Submit <svg xmlns="http://www.w3.org/2000/svg" class="h-4  inline-block items w-5 " viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
                                 </svg>
@@ -103,20 +102,23 @@ require_once SITE_ROOT."/components/footer.php"
 
     </section>
 
-       <!-- login and register models -->
-  <section>
-    <?php
+    <!-- login and register models -->
+    <section>
+        <?php
         login_design();
         reg_form();
+        under_construction();
         ?>
     </section>
 
+
+
     <footer class=" mt-1">
         <?php
-            footer("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php");
+        footer("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php");
         ?>
-     </footer>
-   
+    </footer>
+
 
 
 

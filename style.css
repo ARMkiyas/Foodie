@@ -36,6 +36,7 @@
 }
 
 
+
 .log_btn{
     @apply text-white bg-blue-600 rounded-3xl p-2 transition ease-in-out duration-500 transform hover:scale-110 hover:bg-white hover:text-black;
 }

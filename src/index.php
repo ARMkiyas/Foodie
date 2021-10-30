@@ -44,12 +44,14 @@ require_once('components/footer.php')
       <span class="text-white  font-semibold text-2xl">Your favorite foods</span>
 
       <div class="mt-5 ">
-        <label for="search" class="relative flex justify-center">
-          <input id="search" class="text-center w-full py-2 rounded-full  outline-white border-2 border-transparent focus:border-blue-400" type="text" name="search" value="" placeholder="Search">
-          <button class="absolute top-1 bottom-1 rounded-full px-3 text-white bg-red-500 hover:bg-red-600 right-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg></button>
-        </label>
+        <form action="./pages/foods.php" method="get">
+          <label for="search" class="relative flex justify-center">
+            <input id="search" name="search" class="text-center w-full py-2 rounded-full  outline-white border-2 border-transparent focus:border-blue-400" type="text" name="search" value="" placeholder="Search">
+            <button type="submit" class="absolute top-1 bottom-1 rounded-full px-3 text-white bg-red-500 hover:bg-red-600 right-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg></bt<button>
+          </label>
+        </form>
 
 
       </div>
@@ -59,15 +61,21 @@ require_once('components/footer.php')
 
   </section>
 
-  
-   <!-- login and register models -->
+
+  <!-- login and register models -->
   <section>
     <?php
-        login_design();
-        reg_form();
-        ?>
-    </section>
+    login_design();
+    reg_form();
+    ?>
+  </section>
 
+
+  <section>
+    <?php
+      under_construction();
+    ?>
+  </section>
 
   <section class="start my-10 mx-5 flex flex-col md:flex-row md:justify-evenly transform translate-x-full transition duration-700 ease-out ">
     <div class="flex md:w-1/3 flex-col flex-wrap justify-center text-center ">
@@ -100,7 +108,7 @@ require_once('components/footer.php')
 
   </section>
 
-  <section class=" flex flex-col md:flex-row  transform-none transition-none md:px-10 px-5 w-full md:space-x-10 items-center">
+  <section class="revel flex flex-col md:flex-row   md:px-10 px-5 w-full md:space-x-10 items-center  transform translate-y-96 opacity-0 transition  ease-out duration-700">
     <div class="  space-y-5 md:w-1/2 text-center flex flex-col items-center md:items-start md:text-left order-2 md:order-1">
       <div class=" text-indigo-500  font-medium">
         Established Since 2014
@@ -112,7 +120,7 @@ require_once('components/footer.php')
         Discover local, on-demand delivery or Pickup from restaurants, nearby grocery and convenience stores, and more.
       </div>
       <div class="text-gray-500 text-md lg:text-lg">
-      From your neighborhood sushi spot to the burger and fries you crave, choose from over 300,000 local and national favorites across the Sri lanka, U.S., Canada, Australia and more.
+        From your neighborhood sushi spot to the burger and fries you crave, choose from over 300,000 local and national favorites across the Sri lanka, U.S., Canada, Australia and more.
       </div>
 
       <div class=" bg-indigo-600 py-2 px-3 w-auto text-center hover:bg-indigo-700 text-white font-bold rounded-md ">
@@ -129,7 +137,7 @@ require_once('components/footer.php')
 
   </section>
 
-  <section class=" flex flex-col md:flex-row  transform-none transition-none md:px-10 px-5 py-10 w-full md:space-x-10 md:space-y-10 items-center">
+  <section class="revel flex flex-col md:flex-row   md:px-10 px-5 py-10 w-full md:space-x-10 md:space-y-10 items-center transform translate-y-96 opacity-0 transition  ease-out duration-700">
 
     <div class="md:w-1/2 ">
       <img src="./assets/includes/card.png" class=" rounded-max2  " alt="">
@@ -142,7 +150,7 @@ require_once('components/footer.php')
         Why <span class=" inline-block text-white bg-indigo-700 transform -skew-x-12  px-4 pb-2">Choose Us ?</span>
       </div>
       <div class="text-gray-500 text-md lg:text-lg">
-      Foodie is a lead­ing glob­al online food deliv­ery mar­ket­place, con­nect­ing con­sumers with over 580,000 con­nect­ed restau­rants in 25 countries.
+        Foodie is a lead­ing glob­al online food deliv­ery mar­ket­place, con­nect­ing con­sumers with over 580,000 con­nect­ed restau­rants in 25 countries.
       </div>
       <div class="text-gray-500 text-md lg:text-lg flex space-x-12">
         <div>
@@ -177,11 +185,11 @@ require_once('components/footer.php')
   </section>
 
 
-  <footer>
+  <footer class="revel transform translate-y-96 opacity-0 transition  ease-out duration-700">
 
-  <?php
+    <?php
     footer("index.php", "pages/foods.php", "pages/join_partner.php", "pages/about_us.php", "pages/contact_us.php");
-  ?>
+    ?>
   </footer>
 
   <!-------------------------------- scripts --------------------------------------->

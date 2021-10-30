@@ -3,6 +3,7 @@
 function nav($home_link, $food_link, $become_parner_link, $about_us_link, $contact_us_link,$no)
 {
 
+
   echo  "
         <nav class=\"px-5 overflow-hidden w-screen flex lg:justify-between lg:items-center justify-between\">
     
@@ -12,31 +13,31 @@ function nav($home_link, $food_link, $become_parner_link, $about_us_link, $conta
     
     
           <ul class=\"flex flex-col lg:flex-row text-gray font-bold  lg:space-x-5 items-center invisible lg:visible\">
-            <li class=\"text-blue-600\"><a href=\"${home_link}\">Home</a></li>
+            <li class=\"".(($no==1)?"text-blue-600":"nav_hover")."\"><a href=\"${home_link}\">Home</a></li>
             <li class=\"\">
               <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" class=\"w-4 invisible lg:visible h-4 lg:current-fill\" viewBox=\"0 0 24 24\">
                 <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z\" />
               </svg>
             </li>
-            <li class=\"nav_hover\"><a href=\"$food_link\"/>Foods</a></li>
+            <li class=\"".(($no==2)?"text-blue-600":"nav_hover")."\"><a href=\"$food_link\"/>Foods</a></li>
             <li class=\"\">
               <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" class=\"w-4 h-4 invisible lg:visible lg:current-fill\" viewBox=\"0 0 24 24\">
                 <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z\" />
               </svg>
             </li>
-            <li class=\"nav_hover\"><a href=\"$become_parner_link\">Become a Partner</a></li>
+            <li class=\"".(($no==3)?"text-blue-600":"nav_hover")."\"><a href=\"$become_parner_link\">Become a Partner</a></li>
             <li class=\"\">
               <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" class=\"w-4 invisible lg:visible h-4 lg:current-fill\" viewBox=\"0 0 24 24\">
                 <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z\" />
               </svg>
             </li>
-            <li class=\"nav_hover\"><a href=\"$about_us_link\">About us</a></li>
+            <li class=\"".(($no==4)?"text-blue-600":"nav_hover")."\"><a href=\"$about_us_link\">About us</a></li>
             <li class=\"\">
               <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"currentColor\" class=\"w-4 invisible lg:visible h-4 lg:current-fill\" viewBox=\"0 0 24 24\">
                 <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z\" />
               </svg>
             </li>
-            <li class=\"nav_hover\"><a href=\"$contact_us_link\">Contact US</a></li>
+            <li class=\"".(($no==5)?"text-blue-600":"nav_hover")."\"><a href=\"$contact_us_link\">Contact US</a></li>
     
           </ul>
     
@@ -132,7 +133,7 @@ function login_design()
       <div class=" font-bold text-xl self-center">
         Sign in to your account
       </div>
-      <form action="#" class="">
+      <form  class="login">
 
         <div class="p-2">
           <label for="name" class="form_lable">Email Address</label>
@@ -152,7 +153,7 @@ function login_design()
         </div>
 
         <div class="p-2 py-5">
-          <button class="submit_btn">
+          <button type="submit" class="submit_btn">
             Login
           </button>
         </div>
@@ -184,7 +185,7 @@ function reg_form()
     <div class=" font-bold text-xl self-center">
       Create your Account
     </div>
-    <form action="#" class="">
+    <form action="#" class="register">
 
       <div class="p-2">
         <label for="name" class="form_lable">Full Name</label>
@@ -284,7 +285,7 @@ function reg_form()
       </div>
 
       <div class="p-2 py-5">
-        <button class="submit_btn">
+        <button type="submit" class="submit_btn">
           Register
         </button>
       </div>
@@ -296,4 +297,36 @@ function reg_form()
     </div>
   </div>
 </div>';
+}
+
+
+function under_construction(){
+
+  echo '
+  <div class="model hidden opacity-0 transition ease-in-out duration-1000 z-10" role="dialog">
+    <div class="model-body transform scale-0 opacity-0 transition ease-in-out duration-500">
+      <button class="cls self-end " >
+        <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <div class="logo self-center mb-4">
+        Foodie
+      </div>
+      <hr>
+      <div>
+        <img class="self-center" src="https://image.freepik.com/free-vector/abstract-grunge-style-coming-soon-with-black-splatter_1017-26690.jpg" alt="">
+      </div>
+      <div class=" w-11/12 self-center text-sm text-gray-500 text-center mb-4">
+        oops sorry, The website under construction, we are comming soon as possible, please be patient.
+      </div>
+
+    
+
+      <button class="cls bg-indigo-500 hover:bg-indigo-600 text-white font-semibold p-2 rounded-3xl">OK</button>
+
+    </div>
+  </div>
+';
 }
