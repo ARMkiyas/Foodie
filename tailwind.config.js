@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './src/**/*.php',
+     './src/**/*.js',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
