@@ -38,6 +38,11 @@ require_once SITE_ROOT . "/components/footer.php"
         ?>
     </section>
 
+    <section>
+        <?php
+        under_construction();
+        ?>
+    </section>
     <section class="font-sans ">
         <div>
             <section class="bg-white mt-20">

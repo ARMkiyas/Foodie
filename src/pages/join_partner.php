@@ -27,12 +27,12 @@ require_once SITE_ROOT . "/components/footer.php";
         <?php
 
         nav("../index.php", "foods.php", "join_partner.php", "about_us.php", "contact_us.php", 3);
-        
+
         ?>
     </section>
-   <!-- login and register models -->
-   <section>
-    <?php
+    <!-- login and register models -->
+    <section>
+        <?php
         login_design();
         reg_form();
         ?>
@@ -246,7 +246,7 @@ require_once SITE_ROOT . "/components/footer.php";
                                 <textarea rows="4" cols="80" class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full" placeholder="Type a message..."></textarea>
                             </div>
                             <div class="text-center mt-6">
-                                <button class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                                <button class="mess bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
                                     Send Message
                                 </button>
                             </div>
@@ -256,6 +256,12 @@ require_once SITE_ROOT . "/components/footer.php";
             </div>
         </div>
 
+    </section>
+
+    <section>
+        <?php
+        under_construction();
+        ?>
     </section>
 
 
